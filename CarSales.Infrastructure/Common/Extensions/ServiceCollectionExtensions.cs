@@ -12,8 +12,15 @@ public static class ServiceCollectionExtensions
 {
     public static void AddAppDbContext(this IServiceCollection services, IConfiguration configuration)
     {
+        var connectionString = configuration.GetConnectionString("DefaultConnection");
+
+        if (Environment.GetEnvironmentVariable("CONTAINER") == "Docker")
+        {
+            connectionString = configuration.GetConnectionString("DockerConnection");
+        }
+
         services.AddDbContext<AppDbContext>(options =>
-            options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
+            options.UseNpgsql(connectionString));
 
         services.AddHostedService<BookingBackgroundService>();
     }
