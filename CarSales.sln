@@ -3,17 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSales.WebApi", "CarSales\CarSales.WebApi.csproj", "{80287A5D-DE58-44D8-9120-EA9FA31C00AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarSales.WebApi", "CarSales.WebApi\CarSales.WebApi.csproj", "{80287A5D-DE58-44D8-9120-EA9FA31C00AE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{EB890CA0-B927-48E5-95CD-E59E35C624BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarSales.Domain", "CarSales.Domain\CarSales.Domain.csproj", "{A68AB008-B039-48D5-B484-44FC46AE59AB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLogic", "BusinessLogic", "{7D7F9467-A7BF-4989-8094-C52ED1E9D827}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarSales.Infrastructure", "CarSales.Infrastructure\CarSales.Infrastructure.csproj", "{AC67E51E-BA0C-41EB-8D98-366AD74AB82F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSales.Logic", "CarSales.Logic\CarSales.Logic.csproj", "{25F4E137-31A5-4B35-9CF9-36D104A5E96D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarSales.Common", "CarSales.Common\CarSales.Common.csproj", "{83DC1EDE-B91F-4CFF-AB3E-F3C8591D5D66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSales.Domain", "CarSales.Domain\CarSales.Domain.csproj", "{A68AB008-B039-48D5-B484-44FC46AE59AB}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{21F7036B-7411-4993-8DB4-879446FE18FB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSales.Application", "CarSales.Application\CarSales.Application.csproj", "{1A363E0E-76BA-4697-B774-10DF754B5516}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,22 +23,25 @@ Global
 		{80287A5D-DE58-44D8-9120-EA9FA31C00AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80287A5D-DE58-44D8-9120-EA9FA31C00AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80287A5D-DE58-44D8-9120-EA9FA31C00AE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{25F4E137-31A5-4B35-9CF9-36D104A5E96D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{25F4E137-31A5-4B35-9CF9-36D104A5E96D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{25F4E137-31A5-4B35-9CF9-36D104A5E96D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{25F4E137-31A5-4B35-9CF9-36D104A5E96D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A68AB008-B039-48D5-B484-44FC46AE59AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A68AB008-B039-48D5-B484-44FC46AE59AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A68AB008-B039-48D5-B484-44FC46AE59AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A68AB008-B039-48D5-B484-44FC46AE59AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC67E51E-BA0C-41EB-8D98-366AD74AB82F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC67E51E-BA0C-41EB-8D98-366AD74AB82F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC67E51E-BA0C-41EB-8D98-366AD74AB82F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC67E51E-BA0C-41EB-8D98-366AD74AB82F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83DC1EDE-B91F-4CFF-AB3E-F3C8591D5D66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83DC1EDE-B91F-4CFF-AB3E-F3C8591D5D66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83DC1EDE-B91F-4CFF-AB3E-F3C8591D5D66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83DC1EDE-B91F-4CFF-AB3E-F3C8591D5D66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A363E0E-76BA-4697-B774-10DF754B5516}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A363E0E-76BA-4697-B774-10DF754B5516}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A363E0E-76BA-4697-B774-10DF754B5516}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A363E0E-76BA-4697-B774-10DF754B5516}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{80287A5D-DE58-44D8-9120-EA9FA31C00AE} = {EB890CA0-B927-48E5-95CD-E59E35C624BE}
-		{25F4E137-31A5-4B35-9CF9-36D104A5E96D} = {7D7F9467-A7BF-4989-8094-C52ED1E9D827}
-		{A68AB008-B039-48D5-B484-44FC46AE59AB} = {21F7036B-7411-4993-8DB4-879446FE18FB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BEB38393-6332-40AD-B683-51B88288DF05}
