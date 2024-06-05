@@ -37,8 +37,6 @@ internal class Program
 
         builder.Services.AddControllers();
 
-        builder.Services.AddEndpointsApiExplorer();
-
         builder.Services.AddSwaggerGen(c =>
         {
             c.SwaggerDoc("v1", new OpenApiInfo { Title = "CarSalesAPI", Version = "v1" });
@@ -67,14 +65,6 @@ internal class Program
                     new string[] {}
                 }
             });
-        });
-
-        builder.Services.AddCors(options =>
-        {
-            options.AddDefaultPolicy(corsBuilder => corsBuilder
-                .AllowAnyOrigin()
-                .AllowAnyHeader()
-                .AllowAnyMethod());
         });
 
         var app = builder.Build();
